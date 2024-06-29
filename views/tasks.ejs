@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+<div>
+    <h1>create task</h1>
+    <form action="/task" method="post">
+        <input type="text" name="title" id="" placeholder="title">
+        <input type="text" name="description" id="" placeholder="description">
+        <input type="text" name="dueDate" id="" placeholder="date">
+        <input type="text" name="priority" id="" placeholder="priority">
+        <input type="text" name="status" id="" placeholder="status">
+        
+        <button type="submit">submit</button>
+      </form>
+
+
+
+</div>
+<% include ./partials/footer.ejs %>

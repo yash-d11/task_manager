@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form action="/task" method="post">
+      <input type="text" name="title" id="" placeholder="title">
+      <input type="text" name="description" id="" placeholder="description">
+      <input type="text" name="dueDate" id="" placeholder="date">
+      <input type="text" name="priority" id="" placeholder="priority">
+      <input type="text" name="status" id="" placeholder="status">
+      
+      <button type="submit">submit</button>
+    </form>
+    
+    <form action="/register" method="post">
+      <input type="text" name="username" id="" placeholder="username">
+      <input type="password" name="password" id="" placeholder="password">
+      
+      <button type="submit">submit</button>
+    </form>
+    <form action="/login" method="post">
+      <input type="text" name="username" id="" placeholder="username">
+      <input type="password" name="password" id="" placeholder="password">
+      
+      <button type="submit">submit</button>
+    </form>
+
+    <form action="/update" method="post">
+      <input type="text" name="taskID" id="" placeholder="task-id">
+      <input type="text" name="title" id="" placeholder="title">
+      <input type="text" name="description" id="" placeholder="description">
+      <input type="text" name="dueDate" id="" placeholder="date">
+      <input type="text" name="priority" id="" placeholder="priority">
+      <input type="text" name="status" id="" placeholder="status">
+      
+      <button type="submit">submit</button>
+    </form>
+
+    <form action="/delete" method="post">
+      <input type="text" name="title" id="" placeholder="title">
+      
+      
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
